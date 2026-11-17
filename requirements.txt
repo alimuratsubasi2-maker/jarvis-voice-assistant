@@ -1,0 +1,25 @@
+SpeechRecognition==3.10.4
+PyAudio==0.2.14
+requests==2.32.3
+python-dotenv==1.0.1
+playsound==1.2.2
+edge-tts>=7.2.8
+flask==3.1.3
+pillow==12.3.0
+
+# Opsiyonel - yerel/offline STT icin (jarvis_voice_server.py'de USE_WHISPER = True yaparsan)
+# faster-whisper==1.0.3
+
+# ElevenLabs/Gemini icin ekstra paket gerekmez (requests zaten yukarida var) -
+# .env dosyasina ilgili API anahtarini eklemen yeterli.
+
+# Konusmaci tanima (opsiyonel - enroll_voice.py calistirirsan gerekir).
+# NOT: normal "webrtcvad" Windows'ta C++ derleyici istiyor, bu yuzden
+# onceden derlenmis "webrtcvad-wheels" kullaniyoruz (ayni modul adini verir).
+webrtcvad-wheels==2.0.14
+resemblyzer==0.1.4
+numpy
+librosa
+torch
+soundfile
+
